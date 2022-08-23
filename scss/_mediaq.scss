@@ -1,0 +1,180 @@
+@import './base/variables';
+@import './base/extends';
+
+/* MEDIA QUERY */
+@include mediaq('tablet') {
+    body {
+        padding-bottom: 15rem;
+    }
+
+    /* header */
+    .encabezado {
+
+        font-size: map-get($letras, "letra-default");
+
+        .navbar-light {
+            .navbar-toggler {
+                color: map-get($colores, "color-secundario") !important;
+                opacity: 50%;
+            }
+        }
+    }
+
+    /* contacto */
+    .mapa {
+        height: 100vh;
+        flex-direction: column;
+        margin: 0;
+
+        p {
+            width: auto;
+            margin: 20px;
+        }
+    }
+
+    /*aboutme*/
+    .w-100 {
+        width: $pantalla-completa  !important;
+    }
+
+    /* estudios */
+    .flexestudio{
+        flex-direction: column;
+    }
+
+    /*projectos*/
+    .presentacion{
+        margin-bottom: 0px;
+    }
+    .projectos {
+        height: auto;
+        margin: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        .card {
+            width: auto;
+        }
+    }
+
+}
+
+/*mobile*/
+@include mediaq('mobile') {
+
+    /* header */
+    .encabezado {
+        width: 100%;
+
+        .nav-link {
+            font-size: map-get($letras, "letra-default");
+        }
+    }
+
+    /*index*/
+    .flexindex {
+        @include flex (column, center, auto);
+
+        .atajoynombre {
+            width: 100%;
+            margin: 0px;
+
+            a {
+                font-size: 20px;
+                text-decoration: auto;
+            }
+        }
+    }
+
+    /*projectos*/
+    .projectos {
+        @include flex (column, center, center);
+        height: auto;
+
+        .card {
+            width: 100%;
+
+            .projectos__items {
+                width: $pantalla-completa;
+
+                img {
+                    height: 400px;
+                    width: $pantalla-completa;
+                    @include margen (30px, auto, auto, auto);
+                }
+            }
+
+            p {
+                width: auto;
+            }
+
+        }
+    }
+
+    /*aboutme*/
+    .carousel-item {
+        .w-100 {
+            width: $pantalla-completa  !important;
+        }
+    }
+
+    /*contactos*/
+    .mapa {
+        height: auto;
+    }
+
+    .mi_iframe {
+        iframe {
+            width: $pantalla-completa;
+            height: 200px;
+            @include margen (10px, auto, auto, auto);
+        }
+    }
+
+    .formulario {
+        width: 100%;
+
+        p.introform {
+            font-size: map-get($letras, "letra-default");
+            margin: 10px;
+        }
+    }
+
+    /*study*/
+    .flexestudio{
+        flex-direction: column;
+    }
+    .introestudio{
+        p{
+            width: 300px;
+        }
+    }
+    .instituciones {
+        a {
+            font-size: map-get($letras, "letra-default");
+        }
+    }
+
+    .img_study {
+        margin: 0;
+        padding: 0;
+
+        img {
+            height: 200px;
+            width: $pantalla-completa  !important;
+        }
+    }
+
+    /*footer*/
+    .RedesSociales {
+        a {
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .pie__RedesSociales__item {
+            margin: 10px;
+        }
+    }
+}

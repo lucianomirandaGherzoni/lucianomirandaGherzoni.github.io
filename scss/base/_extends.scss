@@ -1,0 +1,27 @@
+@mixin mediaq ($vista) {
+    @if $vista =='mobile' {
+        @media screen and (max-width: 480px) {
+            @content;
+        }
+    }
+
+    @if $vista =='tablet' {
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+    }
+}
+@mixin margen ($top,$bottom,$right,$left) {
+    margin: {
+        top: $top;
+        bottom: $bottom;
+        right: $right;
+        left: $left;
+    }
+}
+@mixin flex ($direction,$justify,$aling){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}

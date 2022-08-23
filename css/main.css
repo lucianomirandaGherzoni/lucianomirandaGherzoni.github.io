@@ -1,0 +1,383 @@
+/* en comun */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gruppo', cursive;
+  color: #22333B; }
+
+body {
+  background-color: #EAE0D5;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  padding-bottom: 12rem;
+  min-height: 100vh; }
+  body p {
+    font-weight: 700;
+    margin: 20px;
+    font-size: 25px; }
+
+/* header */
+.encabezado {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  font-weight: 800; }
+  .encabezado .navbar-collapse {
+    flex-grow: initial; }
+  .encabezado .navbar-brand .logo {
+    height: 40px;
+    width: 150px; }
+  .encabezado .bg-light {
+    background-color: #22333B !important; }
+  .encabezado .navbar-light .navbar-nav .nav-link {
+    color: #EAE0D5 !important; }
+
+/* titulos */
+h1.titulos {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 40px; }
+
+/* footer */
+.pie {
+  background-color: #22333B;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-weight: 800; }
+  .pie .RedesSociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: auto;
+    padding: 20px; }
+    .pie .RedesSociales .bi {
+      color: #EAE0D5;
+      font-size: 20px; }
+  .pie .copyright {
+    font-size: 18px;
+    padding-bottom: 10px;
+    opacity: 30%;
+    color: #EAE0D5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 0px; }
+
+/*body index*/
+section.flexindex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.atajoynombre {
+  text-align: center;
+  width: 50%; }
+  .atajoynombre .minombre p {
+    font-size: 25px;
+    font-style: oblique;
+    font-stretch: expanded; }
+  .atajoynombre .minombre h1 {
+    font-size: 60px; }
+  .atajoynombre .minombre .mir {
+    font-size: 60px;
+    color: #5E503F; }
+  .atajoynombre .atajoProjectsAbout a {
+    color: #5E503F;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 25px; }
+    .atajoynombre .atajoProjectsAbout a:hover {
+      background-color: #22333B;
+      color: #eae0d5;
+      border-radius: 5px;
+      opacity: 70%; }
+
+/*body projects*/
+.projectos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.card {
+  margin: 30px !important;
+  margin-top: 0;
+  padding: 20px !important;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  background-color: #22333B; }
+  .card p {
+    width: auto;
+    font-size: 20px;
+    color: #eae0d5; }
+  .card a {
+    color: #eae0d5; }
+  .card img {
+    height: 350px;
+    width: 100%;
+    align-items: center; }
+
+.descripcion-proyectos article {
+  margin: 30px;
+  text-align: left;
+  font-size: 30px; }
+  .descripcion-proyectos article h2 {
+    font-weight: 900;
+    color: #5E503F; }
+
+/*body aboutme*/
+.miinfo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 25px; }
+
+.carousel-item img {
+  height: 70vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.carousel-item .w-100 {
+  width: 70% !important; }
+
+.atajoProjectscontact {
+  margin: 30px; }
+  .atajoProjectscontact a {
+    color: #5E503F;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 25px; }
+    .atajoProjectscontact a:hover {
+      background-color: #22333B;
+      color: #eae0d5;
+      border-radius: 5px;
+      opacity: 70%; }
+
+/*body study*/
+.flexestudio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 30px; }
+  .flexestudio p {
+    width: auto; }
+
+.instituciones ol {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .instituciones ol a {
+    margin: 20px;
+    font-size: 25px;
+    color: #5E503F; }
+
+.mi_iframe iframe {
+  width: 600px;
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto; }
+
+/*body contact*/
+.mapa {
+  margin: 30px;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .mapa p {
+    font-size: 25px;
+    font-weight: 700;
+    width: 600px; }
+
+.titulocolor span {
+  color: #5E503F;
+  font-size: 0;
+  line-height: 1.5; }
+
+.titulocolor span {
+  letter-spacing: 7px;
+  font-size: 40px;
+  font-weight: 700;
+  animation: move 3s ease-in-out infinite; }
+
+@keyframes move {
+  0% {
+    transform: translate(-500%, 0); }
+  50% {
+    text-shadow: 0 50px 50px #5E503F; }
+  100% {
+    transform: translate(500%, 0); } }
+
+.formulario {
+  /*  background-color: rgba(0, 0, 0, 0.5); */
+  background-image: url(../imagenes/formulario2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 90%;
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 1px; }
+  .formulario p.introform {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #eae0d5;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 6px; }
+  .formulario input,
+  .formulario textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 25px;
+    border: none; }
+  .formulario textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%; }
+  .formulario .botonform:hover {
+    cursor: pointer; }
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  body {
+    padding-bottom: 15rem; }
+  /* header */
+  .encabezado {
+    font-size: 25px; }
+    .encabezado .navbar-light .navbar-toggler {
+      color: #5E503F !important;
+      opacity: 50%; }
+  /* contacto */
+  .mapa {
+    height: 100vh;
+    flex-direction: column;
+    margin: 0; }
+    .mapa p {
+      width: auto;
+      margin: 20px; }
+  /*aboutme*/
+  .w-100 {
+    width: 100% !important; }
+  /* estudios */
+  .flexestudio {
+    flex-direction: column; }
+  /*projectos*/
+  .presentacion {
+    margin-bottom: 0px; }
+  .projectos {
+    height: auto;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+    .projectos .card {
+      width: auto; } }
+
+/*mobile*/
+@media screen and (max-width: 480px) {
+  /* header */
+  .encabezado {
+    width: 100%; }
+    .encabezado .nav-link {
+      font-size: 25px; }
+  /*index*/
+  .flexindex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: auto; }
+    .flexindex .atajoynombre {
+      width: 100%;
+      margin: 0px; }
+      .flexindex .atajoynombre a {
+        font-size: 20px;
+        text-decoration: auto; }
+  /*projectos*/
+  .projectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; }
+    .projectos .card {
+      width: 100%; }
+      .projectos .card .projectos__items {
+        width: 100%; }
+        .projectos .card .projectos__items img {
+          height: 400px;
+          width: 100%;
+          margin-top: 30px;
+          margin-bottom: auto;
+          margin-right: auto;
+          margin-left: auto; }
+      .projectos .card p {
+        width: auto; }
+  /*aboutme*/
+  .carousel-item .w-100 {
+    width: 100% !important; }
+  /*contactos*/
+  .mapa {
+    height: auto; }
+  .mi_iframe iframe {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto; }
+  .formulario {
+    width: 100%; }
+    .formulario p.introform {
+      font-size: 25px;
+      margin: 10px; }
+  /*study*/
+  .flexestudio {
+    flex-direction: column; }
+  .introestudio p {
+    width: 300px; }
+  .instituciones a {
+    font-size: 25px; }
+  .img_study {
+    margin: 0;
+    padding: 0; }
+    .img_study img {
+      height: 200px;
+      width: 100% !important; }
+  /*footer*/
+  .RedesSociales a {
+    list-style: none;
+    text-decoration: none; }
+  .RedesSociales .pie__RedesSociales__item {
+    margin: 10px; } }
+
+/*APLICANDO SASS*/

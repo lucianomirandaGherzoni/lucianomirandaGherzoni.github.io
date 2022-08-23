@@ -1,0 +1,244 @@
+@import './base/extends';
+@import './base/variables';
+/*body index*/
+section.flexindex{
+ @include flex (row,center,center);
+ height: 100vh;
+}
+
+    .atajoynombre {
+        text-align: center;
+        width: 50%;
+
+        .minombre {
+            p {
+                font-size: map-get($letras, "letra-default");
+                font-style: oblique;
+                font-stretch: expanded;
+            }
+
+            h1 {
+                font-size: map-get($letras, "letra-titulo");
+            }
+
+            .mir {
+                font-size: map-get($letras, "letra-titulo");
+                color: map-get($colores, "color-secundario");
+            }
+
+        }
+        .atajoProjectsAbout {
+            a {
+                color: map-get($colores, "color-secundario");
+                font-weight: 700;
+                text-decoration: none;
+                @include margen (10px, 10px, 10px, 10px);
+                font-size: map-get($letras, "letra-default");
+
+                &:hover {
+                    background-color: map-get($colores, "color-principal");
+                    color: #eae0d5;
+                    border-radius: 5px;
+                    opacity: 70%;
+                }
+
+            }
+        }
+
+    }
+
+/*body projects*/
+
+.projectos {
+    @include flex (row,center,center);
+}
+
+.card {
+    margin: 30px!important;
+    margin-top: 0;
+    padding: 20px!important;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    background-color:  map-get($colores, "color-principal"); 
+   
+p{
+    width: auto;
+    font-size: 20px;
+   color: #eae0d5;
+}
+a{
+    color: #eae0d5;
+}
+
+    img {
+        height: 350px;
+        width: 100%;
+        align-items: center;
+    }
+}
+.descripcion-proyectos{
+    article{
+        margin: 30px;
+        text-align: left;
+        font-size: 30px;
+        h2{
+            font-weight: 900;
+            color:  map-get($colores, "color-secundario"); 
+            
+        }
+}
+}
+
+/*body aboutme*/
+.miinfo {
+    @include margen (10px, 10px, 10px, 10px);
+    font-size: map-get($letras, "letra-default");
+
+}
+
+.carousel-item {
+    img {
+        height: 70vh;
+        @include margen (20px, 20px, auto, auto);
+    }
+
+    .w-100 {
+        width: 70% !important;
+    }
+
+}
+
+.atajoProjectscontact {
+    margin: 30px;
+    a {
+        color: map-get($colores, "color-secundario");
+        font-weight: 700;
+        text-decoration: none;
+        @include margen (10px, 10px, 10px, 10px);
+        font-size: map-get($letras, "letra-default");
+
+        &:hover {
+            background-color: map-get($colores, "color-principal");
+           color: #eae0d5;
+           border-radius: 5px;
+           opacity: 70%;
+        }
+    }
+
+}
+
+/*body study*/
+.flexestudio{
+    @include flex (row,center,center);
+    margin: 30px;
+    p{
+        width:auto;
+    }
+}
+.instituciones {
+    ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            margin: 20px;
+            font-size: map-get($letras, "letra-default");
+            color: map-get($colores, "color-secundario");
+        }
+    }
+
+}
+
+.mi_iframe {
+    iframe {
+        width: 600px;
+        height: 500px;
+        @include margen (20px, auto, auto, auto);
+    }
+}
+
+/*body contact*/
+.mapa{
+    margin: 30px;
+    height: 70vh;
+    @include flex (row,center,center);
+    p{
+        font-size: map-get($letras, "letra-default");
+        font-weight: 700;
+        width: 600px;
+    }
+}
+.titulocolor {
+    span {
+        color: map-get($colores, "color-secundario");
+        font-size: 0;
+        line-height: 1.5;
+    }
+}
+
+.titulocolor {
+    span {
+        letter-spacing: 7px;
+        font-size: map-get($letras, "letra-subtitulo");
+        font-weight: 700;
+        animation: move 3s ease-in-out infinite;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-500%, 0);
+    }
+
+    50% {
+        text-shadow: 0 50px 50px map-get($colores, "color-secundario");
+    }
+
+    100% {
+        transform: translate(500%, 0);
+    }
+}
+
+.formulario {
+    /*  background-color: rgba(0, 0, 0, 0.5); */
+    background-image: url(../imagenes/formulario2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 1px;
+
+    p.introform {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #eae0d5;
+        font-size: 22px;
+        font-weight: 700;
+        border-radius: 6px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: map-get($letras, "letra-default");
+        border: none;
+    }
+
+    textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+    }
+    .botonform:hover {
+        cursor: pointer;
+    }
+}

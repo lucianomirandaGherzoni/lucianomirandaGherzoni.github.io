@@ -1,0 +1,92 @@
+@import './base/variables';
+@import './base/extends';
+
+/* en comun */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gruppo', cursive;
+    color: map-get($colores, "color-principal");
+}
+
+body {
+    background-color: #EAE0D5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    padding-bottom: 12rem;
+    min-height: 100vh;
+
+    p {
+        font-weight: 700;
+        margin: 20px;
+        font-size: map-get($letras, "letra-default");
+    }
+
+}
+
+/* header */
+
+.encabezado {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-weight: 800;
+    
+    .navbar-collapse {
+        flex-grow: initial;
+
+    }
+
+    .navbar-brand {
+        .logo {
+           height: 40px;
+           width: 150px;
+        }
+    }
+
+    .bg-light {
+        background-color: map-get($colores, "color-principal") !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #EAE0D5!important;
+    }
+
+}
+
+/* titulos */
+h1.titulos {
+    @include margen (10px, 20px, 10px, 10px);
+    font-size: map-get($letras, "letra-subtitulo");
+}
+/* footer */
+.pie {
+    background-color: map-get($colores, "color-principal");
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: $pantalla-completa;
+    font-weight: 800;
+
+    .RedesSociales {
+        @include flex (row, space-between, auto);
+        padding: 20px;
+
+        .bi {
+            color:#EAE0D5;
+            font-size: 20px;
+        }
+
+    }
+
+    .copyright {
+        font-size: map-get($letras, "letra-chica");
+        padding-bottom: 10px;
+        opacity: 30%;
+        color: #EAE0D5;
+        @include margen (10px, 10px, 0px, 0px)
+    }
+}
